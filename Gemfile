@@ -33,8 +33,12 @@ gem 'gridhook'
 gem 'capistrano', '2.12.0'
 gem "rvm-capistrano"
 
+# Use debugger
+# gem 'debugger', group: [:development, :test]
+
 gem "s3" #required by production_chain
 gem "production_chain"
+gem "exception_notification"
 
 
 # Use ActiveModel has_secure_password
