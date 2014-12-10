@@ -1,0 +1,2 @@
+module Sendgrid::LogsHelper
+end

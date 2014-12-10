@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @sendgrid_log.email %>
+</p>
+
+<%= link_to 'Edit', edit_sendgrid_log_path(@sendgrid_log) %> |
+<%= link_to 'Back', sendgrid_logs_path %>

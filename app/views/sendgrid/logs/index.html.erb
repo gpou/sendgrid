@@ -1,0 +1,30 @@
+<h1>Listing sendgrid_logs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Email</th>
+      <th>Category</th>
+      <th>Time</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @sendgrid_logs.each do |sendgrid_log| %>
+      <tr>
+        <td><%= sendgrid_log.log_type %></td>
+        <td><%= sendgrid_log.email %></td>
+        <td><%= sendgrid_log.category %></td>
+        <td><%= sendgrid_log.time %></td>
+        <td><%= link_to 'Show', sendgrid_log %></td>
+        <td><%= link_to 'Edit', edit_sendgrid_log_path(sendgrid_log) %></td>
+        <td><%= link_to 'Destroy', sendgrid_log, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Log', new_sendgrid_log_path %>
