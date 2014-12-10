@@ -16,7 +16,6 @@ before "deploy:assets:symlink", "db:symlink"
 
 after "deploy:update_code", "db:symlink"
 after "deploy:setup", "db:mkdir"
-after "deploy:restart", "mailcatcher:start"
 
 namespace :db do
   # make a symbolik link on the server of database.yml in shared/config directory to the release/config directory.
