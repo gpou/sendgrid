@@ -20,6 +20,10 @@ test:
   <<: *default
   database: db/test.sqlite3
 
+recipe:
+  <<: *default
+  database: db/recipe.sqlite3
+
 production:
   <<: *default
   database: db/production.sqlite3
