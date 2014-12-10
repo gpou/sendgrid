@@ -78,7 +78,7 @@ GEM
     net-ssh (2.9.1)
     net-ssh-gateway (1.2.0)
       net-ssh (>= 2.6.5)
-    production_chain (0.0.10)
+    production_chain (0.0.7)
     proxies (0.2.1)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -169,7 +169,7 @@ DEPENDENCIES
   gridhook
   jbuilder (~> 2.0)
   jquery-rails
-  production_chain
+  production_chain (= 0.0.7)
   rails (= 4.1.6)
   rspec-rails
   rvm-capistrano

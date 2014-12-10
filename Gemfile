@@ -37,7 +37,7 @@ gem "rvm-capistrano"
 # gem 'debugger', group: [:development, :test]
 
 gem "s3" #required by production_chain
-gem "production_chain"
+gem "production_chain", '0.0.7'
 gem "exception_notification"
 
 
